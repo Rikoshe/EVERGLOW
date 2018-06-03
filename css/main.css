@@ -16,11 +16,106 @@ html {
     line-height: 1.4;
 }
 
+body{
+    background-color: #000611;
+    margin: 0 10% 0 10%;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
 #logo img{
     position: relative;
-    width: 100px;
-    
+    width: 180px;
+    height: auto!important;
+    margin-top: 10vh;  
 }
+.first-letter {
+    font-size: 4em!important;
+}
+
+#main-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+#main-nav ul li {
+    padding: 10px;
+    
+    list-style: none;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#main-nav ul li a:hover {
+    text-decoration: underline overline rgb(52, 252, 86);;
+}
+
+p, h2, h3 {
+    color: #98C1D9;
+}
+
+a, h1 {
+    color: #6969B3;
+}
+
+p, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#intro-title{
+    font-size: 6em;
+    font-family: 'Anton', sans-serif;
+}
+
+p { 
+    font-size: 1.2em;
+}
+
+label {
+    color:#98C1D9; 
+    display: 
+}
+
+input, textarea {
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+#contact-box{
+    margin: 5% 20% auto 20%;
+}
+
+hr {
+    margin: 80px 0 80px 0!important;
+
+}
+
+#landing-articlebox{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.preview-articlebox {
+    height: 25%;
+    width: 20%
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
