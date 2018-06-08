@@ -10,111 +10,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-body{
-    background-color: #000611;
-    margin: 0 10% 0 10%;
-}
-
-img {
-    height: 200px;
-    width: auto;
-}
-
-#logo img{
-    position: relative;
-    width: 180px;
-    height: auto!important;
-    margin-top: 10vh;  
-}
-.first-letter {
-    font-size: 4em!important;
-}
-
-#main-nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-}
-
-#main-nav ul li {
-    padding: 10px;
-    
-    list-style: none;
-}
-
-#main-nav ul li a {
-    text-decoration: none;
-    font-size: 1.5em;
-}
-
-#main-nav ul li a:hover {
-    text-decoration: underline overline rgb(52, 252, 86);;
-}
-
-p, h2, h3 {
-    color: #98C1D9;
-}
-
-a, h1 {
-    color: #6969B3;
-}
-
-p, h3 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-a, h2 {
-    font-family: 'Roboto Mono', monospace;
-}
-
-#intro-title{
-    font-size: 6em;
-    font-family: 'Anton', sans-serif;
-}
-
-p { 
-    font-size: 1.2em;
-}
-
-label {
-    color:#98C1D9; 
-    display: 
-}
-
-input, textarea {
-    margin: 5px;
-}
-
-footer {
-    text-align: center;
-}
-
-#contact-box{
-    margin: 5% 20% auto 20%;
-}
-
-hr {
-    margin: 80px 0 80px 0!important;
-
-}
-
-#landing-articlebox{
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.preview-articlebox {
-    height: 25%;
-    width: 20%
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -144,8 +39,8 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 1px solid rgb(52, 252, 86);
+    margin: 80px 0 80px 0!important;
     padding: 0;
 }
 
@@ -198,20 +93,173 @@ textarea {
    ========================================================================== */
 
 
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
 
+body{
+    background-color: #000611;
+    margin: 0 10% 0 10%;
+}
 
+/*
+header {
+    border-bottom: .5px solid rgb(52, 252, 86);
+}
+*/
 
+section {
+    margin-top: 100px;
+}
 
+img {
+    width: 100%;
+    margin: 0 auto;
+}
 
+.logo img{
+    width: 160px;
+    margin-top: 7vh;  
+}
 
+.first-letter {
+    font-size: 4em!important;
+}
 
+.main-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-top: -8vh;
+}
 
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+}
 
+.main-nav ul li a:hover {
+    text-decoration: underline overline rgb(52, 252, 86);
+}
 
+li {
+    padding: 10px;
+    list-style: none;
+}
 
+p, h2, h3 {
+    color: #98C1D9;
+}
 
+a, h1 {
+    color: #6969B3;
+}
 
+p, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
 
+a, h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.intro-title {
+    font-size: 4em;
+    font-family: 'Anton', sans-serif;
+}
+
+p { 
+    font-size: 1.2em;
+}
+
+.landing-articlebox article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*background-color: aqua;*/
+}
+
+.preview-articlebox {
+    width: 25%;
+    /*background-color: yellow;*/
+    padding: 5px;
+}
+
+.preview-articlebox figure {
+    width: 100%;
+    /*box-sizing: border-box;
+    border: 3px solid pink;*/
+    margin: 0!important;
+}
+
+figcaption {
+    color: #6969B3;
+    width: 100%;
+    text-align: center;
+}
+
+.bio-picbox  {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-image: url("../img/justice-league-aquaman.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 1em;
+
+}
+
+.contact-box {
+    margin: 5% 20%;
+}
+
+label {
+    color:#98C1D9; 
+}
+
+input, textarea {
+    margin: 5px 0 5px 0;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    border-top: .5px solid #b3d4fc;
+}
+
+footer p {
+    font-size: .8em;
+    margin-top: 6vh;
+}
+
+.sources ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6vh;
+}
+
+.sources ul li {
+    background-color: blue;
+}
+
+table {
+    width: 100%; 
+    color: red;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: .1em solid yellow;
+}
+
+td {
+    padding: 1em;
+}
 
 /* ==========================================================================
    Helper classes
