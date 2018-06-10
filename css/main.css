@@ -39,7 +39,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid rgb(52, 252, 86);
+    border-top: 1px solid #b3d4fc;
     margin: 80px 0 80px 0!important;
     padding: 0;
 }
@@ -102,16 +102,11 @@ html {
 body{
     background-color: #000611;
     margin: 0 10% 0 10%;
+    text-align: justify;
 }
-
-/*
-header {
-    border-bottom: .5px solid rgb(52, 252, 86);
-}
-*/
 
 section {
-    margin-top: 100px;
+    margin-top: 12vh;
 }
 
 img {
@@ -149,12 +144,22 @@ li {
     list-style: none;
 }
 
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
 p, h2, h3 {
     color: #98C1D9;
 }
 
 a, h1 {
     color: #6969B3;
+}
+
+h1 {
+    padding: 1em;
+    border: 1px solid#b3d4fc;
 }
 
 p, h3 {
@@ -174,7 +179,24 @@ p {
     font-size: 1.2em;
 }
 
-.landing-articlebox article {
+h3 {
+    font-size: 1.6em;
+}
+
+.centerTitle {
+    margin: 5vh auto;
+    width: 30%;
+    padding: 2em;
+    text-align: center;
+    border-top: .1em solid rgba(52, 252, 86, .15);
+}
+
+.main-content {
+    height: 80vh;
+    padding-bottom: 10vh;
+}
+
+.landing-articlebox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -183,23 +205,71 @@ p {
 
 .preview-articlebox {
     width: 25%;
-    /*background-color: yellow;*/
+    height: 20%;
+    overflow: hidden;
     padding: 5px;
 }
 
-.preview-articlebox figure {
+.preview-articlebox figure, .main-articlebox figure {
     width: 100%;
-    /*box-sizing: border-box;
-    border: 3px solid pink;*/
-    margin: 0!important;
+    margin: 0;
 }
 
+.preview-articlebox img {
+    height: 20vh;
+    position: relative;
+        
+}
+
+.user-bar {
+    margin-top: 2em;
+    background-color: brown;
+}
+
+.user-bar ul {
+    display: flex;
+    position: relative;
+    bottom: 5px;
+    height: 30px;
+}
+
+.user-bar li {
+    margin: 0 .2em;
+}
+
+#like, #comment, #share {
+    position: relative;
+    height: 30px;
+    width: auto;
+    color: #6969B3;
+}
+
+#comment {
+    position: relative;
+    height: 20px;
+    width: auto;
+    background-image: url(../img/comments.svg);
+    background-repeat: no-repeat;
+    
+ }
+
+ i {
+    position: relative;
+    margin-left: 2em;
+ }
+ 
 figcaption {
     color: #6969B3;
     width: 100%;
     text-align: center;
 }
 
+.article-author {
+    font-size: .9em;
+    font-style: italic;
+    color: #000611;
+    font-weight: 700;
+}
 .bio-picbox  {
     width: 150px;
     height: 150px;
@@ -211,9 +281,52 @@ figcaption {
     background-repeat: no-repeat;
     float: left;
     margin: 1em;
-
 }
 
+/* ================================================================= ARTICLE PAGE START ================================================================================*/
+.main-articlebox {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    border: 5px solid #b3d4fc;
+    
+}
+
+.main-articleBG {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    z-index: -1;
+    background-position-y: -50vh; 
+}
+
+.asidebox {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(105, 105, 179, .8); 
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.thumbnailsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.tinyPic {
+    height: 10vh;
+    width: auto;
+    margin: 0;
+}
+
+
+/* ================================================================= ARTICLE PAGE END ================================================================================*/
+
+/* ================================================================= FORM START ================================================================================*/
 .contact-box {
     margin: 5% 20%;
 }
@@ -226,10 +339,26 @@ input, textarea {
     margin: 5px 0 5px 0;
 }
 
+textarea {
+    width: 100%;
+}
+
+input:focus, textarea:focus
+{
+    background-color: rgb(52, 252, 86);
+}
+
+/* ================================================================= FORM END ================================================================================*/
+
+/* ================================================================= FOOTER START ================================================================================*/
 footer {
     margin-top: 50px;
     text-align: center;
     border-top: .5px solid #b3d4fc;
+}
+
+footer h2 {
+    text-align: center;
 }
 
 footer p {
@@ -241,25 +370,38 @@ footer p {
     display: flex;
     justify-content: space-around;
     margin-top: 6vh;
+
 }
 
 .sources ul li {
-    background-color: blue;
+    border: 1px solid #b3d4fc;
+    padding: 1em;
 }
 
+/* ================================================================= FOOTER END ================================================================================*/
+
+/* ================================================================= TABLE START ================================================================================*/
 table {
     width: 100%; 
-    color: red;
+    color: #b3d4fc;
     border-collapse: collapse;
+    text-align: center;
 }
 
 th, td {
-    border: .1em solid yellow;
+    border: .1em solid rgb(52, 252, 86);
 }
 
 td {
     padding: 1em;
+    text-align: left;
 }
+
+td ul li {
+    list-style-type: circle;
+}
+/* ================================================================= TABLE END ================================================================================*/
+
 
 /* ==========================================================================
    Helper classes
